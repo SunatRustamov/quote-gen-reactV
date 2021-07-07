@@ -6,10 +6,10 @@ const AuthorQuote = (props) =>{
         <div>
             <div className="quote-text">
                 <i className="fas fa-quote-left"></i>
-                <span id="quote">{props.value}</span>
+                <span id="quote">{(props.quote.text)}</span>
             </div>
             <div className="quote-author">
-                {/* <span id="author">{(props.value.author)}</span> */}
+                {props.quote.author}
             </div>
         </div>
        

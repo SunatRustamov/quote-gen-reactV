@@ -17,7 +17,7 @@ class HomePage extends React.Component{
     
         fetch('https://type.fit/api/quotes')
         .then(response => response.json())
-        .then(async quote => this.setState({quotes: quote}))
+        .then(quote => this.setState({quotes: quote}))
     }
     render(){
         // const ar =[1,2,3,4];
@@ -33,7 +33,7 @@ class HomePage extends React.Component{
         // }
         return(
             <div className="quote-container"  id="quote-container">
-                <AuthorQuote/>
+                <AuthorQuote quote={quoteNum}/>
                 <Buttons/>
                 {console.log(quoteNum)}
                 {/* <div>{console.log(this.state.quotes[0])}</div> */}
